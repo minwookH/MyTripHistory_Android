@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.minwook.mytriphistory.ui.fragment.ContentsListFragment;
+import com.minwook.mytriphistory.ui.fragment.ContentsFragment;
 import com.minwook.mytriphistory.ui.fragment.MapFragment;
 
 public class MainTabAdapter extends FragmentPagerAdapter {
@@ -23,7 +23,7 @@ public class MainTabAdapter extends FragmentPagerAdapter {
 
         switch (position){
             case 0:
-                fragment = ContentsListFragment.newInstance();
+                fragment = ContentsFragment.newInstance();
                 break;
             case 1:
                 fragment = MapFragment.newInstance();
