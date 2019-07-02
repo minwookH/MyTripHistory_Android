@@ -10,12 +10,10 @@ public class MapPresentImpl implements MapPresent {
 
     private Context context;
     private MapPresent.View view;
-    private DumyData dumyData;
 
     public MapPresentImpl(Context context, MapPresent.View view){
         this.context = context;
         this.view = view;
-        //dumyData = new DumyData();
     }
 
     @Override
