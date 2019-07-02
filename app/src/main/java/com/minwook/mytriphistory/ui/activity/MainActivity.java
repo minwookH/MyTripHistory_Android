@@ -1,4 +1,4 @@
-package com.minwook.mytriphistory.ui;
+package com.minwook.mytriphistory.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;

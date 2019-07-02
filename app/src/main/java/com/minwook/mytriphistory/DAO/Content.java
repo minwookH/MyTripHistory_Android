@@ -7,10 +7,23 @@ public class Content {
     private String title;
     private String location;
     private String description;
-    private String latitude;//위도
-    private String longtitude;//경도
-    private Date startDate;
-    private Date endDate;
+    private double latitude;//위도
+    private double longtitude;//경도
+    private String startDate;
+    private String endDate;
+
+    public Content(){}
+
+    public Content(String title, String location, String description, double latitude, double longtitude, String startDate, String endDate){
+        this.title = title;
+        this.location = location;
+        this.description = description;
+        this.latitude = latitude;
+        this.longtitude = longtitude;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
 
     public String getTitle() {
         return title;
@@ -36,35 +49,35 @@ public class Content {
         this.description = description;
     }
 
-    public String getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(String latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 
-    public String getLongtitude() {
+    public double getLongtitude() {
         return longtitude;
     }
 
-    public void setLongtitude(String longtitude) {
+    public void setLongtitude(double longtitude) {
         this.longtitude = longtitude;
     }
 
-    public Date getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
-    public Date getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 }

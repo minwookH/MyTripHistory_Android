@@ -1,4 +1,4 @@
-package com.minwook.mytriphistory.ui;
+package com.minwook.mytriphistory.ui.activity;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -11,8 +11,9 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.minwook.mytriphistory.R;
+import com.minwook.mytriphistory.present.MapPresent;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, MapPresent.View {
 
     private GoogleMap mMap;
 
@@ -44,5 +45,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    }
+
+    @Override
+    public void addMarker(double latitude, double longtitude, String title) {
+        LatLng location = new LatLng(latitude, longtitude);
+        mMap.addMarker(new MarkerOptions().position(location).title(title));
+    }
+
+    @Override
+    public void setCenterMap(double latitude, double longtitude) {
+        LatLng center = new LatLng(latitude, longtitude);
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(center));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(12));
     }
 }

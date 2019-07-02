@@ -2,14 +2,13 @@ package com.minwook.mytriphistory.present;
 
 import com.minwook.mytriphistory.DAO.Content;
 
-import java.util.ArrayList;
+public interface ContentDetailPresent {
 
-public interface MapPresent {
-    void loadLocations();
+    void loadData(int position);
 
     interface View{
+        void setText(Content content);
         void addMarker(double latitude, double longtitude, String title);
         void setCenterMap(double latitude, double longtitude);
     }
 }
-
