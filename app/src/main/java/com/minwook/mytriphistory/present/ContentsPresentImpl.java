@@ -8,13 +8,11 @@ import com.minwook.mytriphistory.model.ContentsModel;
 public class ContentsPresentImpl implements ContentsPresent {
 
     private ContentsPresent.View view;
-    private Context context;
     private ContentsModel model;
 
-    public ContentsPresentImpl(Context context, ContentsPresent.View view){
-        this.context = context;
+    public ContentsPresentImpl(ContentsPresent.View view){
         this.view = view;
-        model = new ContentsModel(context);
+        model = new ContentsModel();
     }
 
 

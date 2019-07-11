@@ -4,33 +4,38 @@ package com.minwook.mytriphistory.ui.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.minwook.mytriphistory.Application.MyApplication;
 import com.minwook.mytriphistory.DAO.Content;
 import com.minwook.mytriphistory.R;
 import com.minwook.mytriphistory.adapter.ContentsAdapter;
+import com.minwook.mytriphistory.di.component.ContentsComponent;
+import com.minwook.mytriphistory.di.component.DaggerContentsComponent;
+import com.minwook.mytriphistory.di.module.ContentsModule;
 import com.minwook.mytriphistory.present.ContentsPresent;
 import com.minwook.mytriphistory.present.ContentsPresentImpl;
 import com.minwook.mytriphistory.ui.activity.ContentDetailActivity;
 
 import java.util.ArrayList;
 
+import javax.inject.Inject;
+
 public class ContentsFragment extends Fragment implements ContentsPresent.View, ContentsAdapter.OnListItemSelectedInterface{
 
     private RecyclerView contents;
     private ArrayList<Content> list;
     private ContentsAdapter contentsAdapter;
-    private ContentsPresentImpl present;
+
+    @Inject
+    public ContentsPresent present;
 
     public ContentsFragment() {
         // Required empty public constructor
@@ -54,7 +59,22 @@ public class ContentsFragment extends Fragment implements ContentsPresent.View, 
             list.add(content);
         }*/
 
-        present = new ContentsPresentImpl(getContext(), this);
+        //present = new ContentsPresentImpl(getContext(), this);
+
+        ContentsComponent contentsComponent = DaggerContentsComponent.builder()
+                                                                .appComponent(((MyApplication)getActivity().getApplication()).getAppComponent())
+                                                                .contentsModule(new ContentsModule(this))
+                                                                .build();
+        contentsComponent.inject(this);
+
+
+
+        /*ContentsComponent contentsComponent = DaggerContentsComponent.builder()
+                .appComponent(((MyApplication)getActivity().getApplication())
+                .getAppComponent())
+                .contentsModule(new ContentsModule())
+                .build();
+        contentsComponent.inject(this);*/
     }
 
     @Override
