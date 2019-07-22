@@ -19,7 +19,7 @@
             android:name=".ui.activity.ContentDetailActivity"
             android:label="@string/title_activity_content_detail"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".ui.activity.MainActivity">
+        <activity android:name="com.minwook.mytriphistory.kotlin.ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
