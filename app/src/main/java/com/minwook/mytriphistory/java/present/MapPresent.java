@@ -1,8 +1,4 @@
-package com.minwook.mytriphistory.present;
-
-import com.minwook.mytriphistory.DAO.Content;
-
-import java.util.ArrayList;
+package com.minwook.mytriphistory.java.present;
 
 public interface MapPresent {
     void loadLocations();

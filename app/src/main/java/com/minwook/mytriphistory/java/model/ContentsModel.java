@@ -1,9 +1,9 @@
-package com.minwook.mytriphistory.model;
+package com.minwook.mytriphistory.java.model;
 
 import android.content.Context;
 
-import com.minwook.mytriphistory.DAO.Content;
-import com.minwook.mytriphistory.common.DumyData;
+import com.minwook.mytriphistory.java.DAO.Content;
+import com.minwook.mytriphistory.java.common.DumyData;
 
 import java.util.ArrayList;
 

@@ -1,6 +1,6 @@
 package com.minwook.mytriphistory.kotlin.present
 
-import com.minwook.mytriphistory.common.DumyData
+import com.minwook.mytriphistory.java.common.DumyData
 
 class MapPresentImpl(var view: MapPresent.View): MapPresent {
     override fun loadLocations() {

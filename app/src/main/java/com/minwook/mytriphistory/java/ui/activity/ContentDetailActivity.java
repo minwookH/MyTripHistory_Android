@@ -1,4 +1,4 @@
-package com.minwook.mytriphistory.ui.activity;
+package com.minwook.mytriphistory.java.ui.activity;
 
 import android.os.Bundle;
 
@@ -15,10 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.minwook.mytriphistory.DAO.Content;
+import com.minwook.mytriphistory.java.DAO.Content;
 import com.minwook.mytriphistory.R;
-import com.minwook.mytriphistory.present.ContentDetailPresent;
-import com.minwook.mytriphistory.present.ContentDetailPresentImpl;
+import com.minwook.mytriphistory.java.present.ContentDetailPresent;
+import com.minwook.mytriphistory.java.present.ContentDetailPresentImpl;
 
 public class ContentDetailActivity extends AppCompatActivity implements OnMapReadyCallback, ContentDetailPresent.View {
     private GoogleMap mMap;

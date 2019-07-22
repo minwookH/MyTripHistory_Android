@@ -1,12 +1,12 @@
-package com.minwook.mytriphistory.adapter;
+package com.minwook.mytriphistory.java.adapter;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.minwook.mytriphistory.ui.fragment.ContentsFragment;
-import com.minwook.mytriphistory.ui.fragment.MapFragment;
+import com.minwook.mytriphistory.java.ui.fragment.ContentsFragment;
+import com.minwook.mytriphistory.java.ui.fragment.MapFragment;
 
 public class MainTabAdapter extends FragmentPagerAdapter {
 

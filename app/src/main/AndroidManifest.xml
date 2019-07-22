@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.activity.ContentDetailActivity"
+            android:name=".java.ui.activity.ContentDetailActivity"
             android:label="@string/title_activity_content_detail"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name="com.minwook.mytriphistory.kotlin.ui.activity.MainActivity">
@@ -39,7 +39,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".ui.activity.MapsActivity"
+            android:name=".java.ui.activity.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
     </application>
 

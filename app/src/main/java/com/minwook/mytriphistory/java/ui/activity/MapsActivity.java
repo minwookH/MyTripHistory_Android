@@ -1,4 +1,4 @@
-package com.minwook.mytriphistory.ui.activity;
+package com.minwook.mytriphistory.java.ui.activity;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -11,7 +11,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.minwook.mytriphistory.R;
-import com.minwook.mytriphistory.present.MapPresent;
+import com.minwook.mytriphistory.java.present.MapPresent;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, MapPresent.View {
 

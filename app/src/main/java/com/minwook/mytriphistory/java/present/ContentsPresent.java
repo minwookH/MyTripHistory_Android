@@ -1,6 +1,6 @@
-package com.minwook.mytriphistory.present;
+package com.minwook.mytriphistory.java.present;
 
-import com.minwook.mytriphistory.DAO.Content;
+import com.minwook.mytriphistory.java.DAO.Content;
 
 import java.util.ArrayList;
 

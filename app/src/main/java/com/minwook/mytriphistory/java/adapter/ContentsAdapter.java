@@ -1,4 +1,4 @@
-package com.minwook.mytriphistory.adapter;
+package com.minwook.mytriphistory.java.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.minwook.mytriphistory.DAO.Content;
+import com.minwook.mytriphistory.java.DAO.Content;
 import com.minwook.mytriphistory.R;
 
 import java.util.ArrayList;

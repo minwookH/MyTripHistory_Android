@@ -1,4 +1,4 @@
-package com.minwook.mytriphistory.ui.fragment;
+package com.minwook.mytriphistory.java.ui.fragment;
 
 
 import android.os.Bundle;
@@ -14,12 +14,11 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.minwook.mytriphistory.R;
-import com.minwook.mytriphistory.present.MapPresent;
-import com.minwook.mytriphistory.present.MapPresentImpl;
+import com.minwook.mytriphistory.java.present.MapPresent;
+import com.minwook.mytriphistory.java.present.MapPresentImpl;
 
 /**
  * A simple {@link Fragment} subclass.

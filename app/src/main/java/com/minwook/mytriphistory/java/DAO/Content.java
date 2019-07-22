@@ -1,6 +1,4 @@
-package com.minwook.mytriphistory.DAO;
-
-import java.util.Date;
+package com.minwook.mytriphistory.java.DAO;
 
 public class Content {
 

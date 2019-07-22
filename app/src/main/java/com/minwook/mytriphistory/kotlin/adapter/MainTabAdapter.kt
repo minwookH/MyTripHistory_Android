@@ -3,8 +3,8 @@ package com.minwook.mytriphistory.kotlin.adapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.minwook.mytriphistory.ui.fragment.ContentsFragment
-import com.minwook.mytriphistory.ui.fragment.MapFragment
+import com.minwook.mytriphistory.java.ui.fragment.ContentsFragment
+import com.minwook.mytriphistory.java.ui.fragment.MapFragment
 
 class MainTabAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
 

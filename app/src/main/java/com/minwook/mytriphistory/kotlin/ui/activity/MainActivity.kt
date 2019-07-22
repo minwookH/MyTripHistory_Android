@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.minwook.mytriphistory.R
-import com.minwook.mytriphistory.adapter.MainTabAdapter
+import com.minwook.mytriphistory.java.adapter.MainTabAdapter
 
 class MainActivity: AppCompatActivity() {
 

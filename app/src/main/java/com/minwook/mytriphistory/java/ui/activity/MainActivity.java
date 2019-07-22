@@ -1,4 +1,4 @@
-package com.minwook.mytriphistory.ui.activity;
+package com.minwook.mytriphistory.java.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 import com.minwook.mytriphistory.R;
-import com.minwook.mytriphistory.adapter.MainTabAdapter;
+import com.minwook.mytriphistory.java.adapter.MainTabAdapter;
 
 public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;

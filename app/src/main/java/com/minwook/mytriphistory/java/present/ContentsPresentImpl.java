@@ -1,9 +1,8 @@
-package com.minwook.mytriphistory.present;
+package com.minwook.mytriphistory.java.present;
 
 import android.content.Context;
 
-import com.minwook.mytriphistory.DAO.Content;
-import com.minwook.mytriphistory.model.ContentsModel;
+import com.minwook.mytriphistory.java.model.ContentsModel;
 
 public class ContentsPresentImpl implements ContentsPresent {
 

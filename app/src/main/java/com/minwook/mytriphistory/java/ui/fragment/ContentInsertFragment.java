@@ -1,7 +1,5 @@
-package com.minwook.mytriphistory.ui.fragment;
+package com.minwook.mytriphistory.java.ui.fragment;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;

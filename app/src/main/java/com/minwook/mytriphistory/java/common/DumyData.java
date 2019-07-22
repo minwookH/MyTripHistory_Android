@@ -1,6 +1,6 @@
-package com.minwook.mytriphistory.common;
+package com.minwook.mytriphistory.java.common;
 
-import com.minwook.mytriphistory.DAO.Content;
+import com.minwook.mytriphistory.java.DAO.Content;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
