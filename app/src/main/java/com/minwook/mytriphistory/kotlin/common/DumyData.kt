@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 object DumyData {
-     var list = ArrayList<Content>()
+    var list = arrayListOf<Content>()
 
     init{
         val dateFormat = SimpleDateFormat("yyyy-MM-dd")

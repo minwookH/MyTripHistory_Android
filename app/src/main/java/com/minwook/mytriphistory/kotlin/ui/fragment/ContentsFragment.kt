@@ -14,10 +14,9 @@ import com.minwook.mytriphistory.kotlin.present.ContentsPresent
 import com.minwook.mytriphistory.kotlin.present.ContentsPresentImpl
 import com.minwook.mytriphistory.java.ui.activity.ContentDetailActivity
 import kotlinx.android.synthetic.main.fragment_contents_list.*
-import java.util.ArrayList
 
 class ContentsFragment: Fragment() , ContentsPresent.View, ContentsAdapter.OnListItemSelectedInterface {
-    private val list = ArrayList<Content>()
+    private val list = arrayListOf<Content>()
     private lateinit var contentsAdapter: ContentsAdapter
     private lateinit var present: ContentsPresentImpl
 
