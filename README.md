@@ -6,3 +6,4 @@
 2. [MVP + Dagger2](https://github.com/pmpmopm1/MyTripHistory_Android/tree/mvp_dagger2) (ing...)
 3. MVP + Dagger2 + Rx
 4. MVVM
+5. [MVP + Kotlin](https://github.com/pmpmopm1/MyTripHistory_Android/tree/mvp_kotlin) (master branch)
